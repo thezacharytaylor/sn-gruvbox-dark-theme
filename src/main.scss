@@ -6,7 +6,7 @@
   --foreground-2: #838383;
   --foreground-3: #a8a8a8;
 
-  --highlight-color: #d79921;
+  --highlight-color: #9300c5;
   --neutral-color: #928374;
   --danger-color: #cc241d;
   --success-color: #458588;
@@ -129,7 +129,7 @@
     background-color: var(--background-1) !important;
     color: var(--sn-stylekit-danger-color);
   }
-  
+
   #notes-column .note.selected .note-flags .flag.info,
   .notes .note.selected .note-flags .flag.info {
     background-color: var(--background-2) !important;
@@ -161,7 +161,7 @@
 
   /* Sidebar note properties: Dates, tags, etc. */
   #notes-column .note .date.faded,
-  #notes-column .note .tags-string>.faded,
+  #notes-column .note .tags-string > .faded,
   #notes-column .note .note-flag,
   .editor-tags input {
     opacity: 1 !important;
@@ -175,29 +175,35 @@
   }
 
   /* Progress bars */
-  #notes-column .note progress, .notes .note progress {
+  #notes-column .note progress,
+  .notes .note progress {
     background-color: var(--background-2) !important;
     color: var(--foreground-2) !important;
   }
-  #notes-column .note progress::-webkit-progress-bar, .notes .note progress::-webkit-progress-bar {
+  #notes-column .note progress::-webkit-progress-bar,
+  .notes .note progress::-webkit-progress-bar {
     background-color: var(--background-2) !important;
   }
-  #notes-column .note progress::-webkit-progress-value, .notes .note progress::-webkit-progress-value {
+  #notes-column .note progress::-webkit-progress-value,
+  .notes .note progress::-webkit-progress-value {
     background-color: var(--foreground-2) !important;
   }
-  #notes-column .note.selected progress, .notes .note.selected progress {
+  #notes-column .note.selected progress,
+  .notes .note.selected progress {
     background-color: var(--background-2) !important;
     color: var(--foreground-2) !important;
   }
-  #notes-column .note.selected progress::-webkit-progress-bar, .notes .note.selected progress::-webkit-progress-bar {
+  #notes-column .note.selected progress::-webkit-progress-bar,
+  .notes .note.selected progress::-webkit-progress-bar {
     background-color: var(--background-2) !important;
   }
-  #notes-column .note.selected progress::-webkit-progress-value, .notes .note.selected progress::-webkit-progress-value {
+  #notes-column .note.selected progress::-webkit-progress-value,
+  .notes .note.selected progress::-webkit-progress-value {
     background-color: var(--foreground-2) !important;
   }
 
   /* Text selection color */
-  ::selection {  
+  ::selection {
     background: var(--success-color) !important;
     color: var(--foreground-1) !important;
   }
