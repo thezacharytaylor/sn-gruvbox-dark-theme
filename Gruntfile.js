@@ -1,5 +1,4 @@
-module.exports = function(grunt) {
-
+module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
       css: {
@@ -8,18 +7,18 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
         },
-      }
+      },
     },
 
     sass: {
       dist: {
         options: {
-         style: 'expanded'
-       },
+          style: 'expanded',
+        },
         files: {
-          'dist/dist.css': 'src/main.scss'
-        }
-      }
+          'dist/dist.css': 'src/main.scss',
+        },
+      },
     },
   });
 
