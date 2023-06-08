@@ -3,14 +3,14 @@ metatype: json
 ---
 
   {
-    "identifier": "test.christianhans.sn-gruvbox-dark-theme",
-    "name": "Gruvbox Dark Theme Test",
+    "identifier": "io.thezacharytaylor.sn-gruvbox-dark-theme",
+    "name": "Gruvbox Dark Theme Dev",
     "content_type": "SN|Theme",
     "area": "themes",
     "description": "Gruvbox Dark Theme for Standard Notes",
-    "version": "v0.0.2",
-    "url": "https://cdn.jsdelivr.net/gh/thezacharytaylor/sn-gruvbox-dark-theme@v0.0.2/dist/dist.css",
-    "download_url": "https://github.com/thezacharytaylor/sn-gruvbox-dark-theme/archive/refs/tags/v0.0.2.zip",
+    "version": "v0.0.3",
+    "url": "https://cdn.jsdelivr.net/gh/thezacharytaylor/sn-gruvbox-dark-theme@v0.0.3/dist/dist.css",
+    "download_url": "https://github.com/thezacharytaylor/sn-gruvbox-dark-theme/archive/refs/tags/v0.0.3.zip",
     "dock_icon": {
       "type": "circle",
       "background_color": "#D79921",
