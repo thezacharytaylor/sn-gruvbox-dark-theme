@@ -6,34 +6,41 @@
   --foreground-2: #838383;
   --foreground-3: #a8a8a8;
 
-  --highlight-color: #d79921;
+  --highlight-color-1: #d79921;
+  --highlight-color-2: #fabd2f;
+  --tint-color-1: #b16286;
+  --tint-color-2: #98971a;
+  --tint-color-3: #689d6a;
   --neutral-color: #928374;
-  --danger-color: #cc241d;
-  --success-color: #458588;
-  --warning-color: #d65d0e;
+  --danger-color-1: #cc241d;
+  --danger-color-2: #fb4934;
+  --success-color-1: #458588;
+  --success-color-2: #83a598;
+  --warning-color-1: #d65d0e;
+  --warning-color-2: #fe8019;
   --border-color: #050606;
 
   /* Footer */
   --footer-bar-border-top-color: 0;
 
   // StyleKit Vars
-  --sn-stylekit-info-color: var(--highlight-color);
-  --sn-stylekit-info-color-darkened: #fabd2f;
+  --sn-stylekit-info-color: var(--highlight-color-1);
+  --sn-stylekit-info-color-darkened: var(--highlight-color-2);
   --sn-stylekit-info-contrast-color: var(--foreground-1);
   --sn-stylekit-info-backdrop-color: var(--background-2);
 
   --sn-stylekit-neutral-color: var(--neutral-color);
   --sn-stylekit-neutral-contrast-color: var(--background-2); // TODO
 
-  --sn-stylekit-success-color: var(--success-color);
+  --sn-stylekit-success-color-1: var(--success-color);
   --sn-stylekit-success-contrast-color: var(--background-2); // TODO
 
-  --sn-stylekit-warning-color: var(--warning-color);
+  --sn-stylekit-warning-color-1: var(--warning-color);
   --sn-stylekit-warning-contrast-color: var(--background-2); // TODO
 
-  --sn-stylekit-danger-color: var(--danger-color);
+  --sn-stylekit-danger-color-1: var(--danger-color);
   --sn-stylekit-danger-contrast-color: var(--background-2); // TODO
-  --sn-stylekit-danger-light-color: #fb4934;
+  --sn-stylekit-danger-light-color: var(--danger-color-2);
 
   --sn-stylekit-shadow-color: var(--background-2);
 
@@ -70,7 +77,7 @@
   --sn-desktop-titlebar-bg-color: var(--background-1);
   --sn-desktop-titlebar-border-color: var(--border-color);
   --sn-desktop-titlebar-ui-color: var(--foreground-1);
-  --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
+  --sn-desktop-titlebar-ui-hover-color: var(--highlight-color-1);
 
   --navigation-item-selected-background-color: var(--background-1);
 
@@ -84,13 +91,14 @@
   // --sn-stylekit-passive-color-6: #e5e5e5;
   // --sn-stylekit-passive-color-super-light: #f9f9f9;
 
-  --sn-stylekit-accessory-tint-color-1: var(--highlight-color);
-  --sn-stylekit-accessory-tint-color-2: #b16286;
-  --sn-stylekit-accessory-tint-color-3: var(--warning-color);
-  --sn-stylekit-accessory-tint-color-4: #458588;
-  --sn-stylekit-accessory-tint-color-5: #d65d0e;
-  --sn-stylekit-accessory-tint-color-6: #98971a;
+  --sn-stylekit-accessory-tint-color-1: var(--highlight-color-1);
+  --sn-stylekit-accessory-tint-color-2: var(--tint-color-1);
+  --sn-stylekit-accessory-tint-color-3: var(--warning-color-1);
+  --sn-stylekit-accessory-tint-color-4: var(--success-color-2);
+  --sn-stylekit-accessory-tint-color-5: var(--warning-color-2);
+  --sn-stylekit-accessory-tint-color-6: var(--tint-color-2);
 
+  // TODO: Original values
   //  --sn-stylekit-passive-color-0: #515357;
   // --sn-stylekit-passive-color-1: #72767e;
   // --sn-stylekit-passive-color-2: #bbbec4;
@@ -150,12 +158,12 @@
   #notes-column .note .note-flags .flag.success,
   .notes .note .note-flags .flag.success {
     background-color: var(--background-1) !important;
-    color: var(--sn-stylekit-success-color);
+    color: var(--sn-stylekit-success-color-1);
   }
   #notes-column .note .note-flags .flag.warning,
   .notes .note .note-flags .flag.warning {
     background-color: var(--background-1) !important;
-    color: var(--sn-stylekit-warning-color);
+    color: var(--sn-stylekit-warning-color-1);
   }
   #notes-column .note .note-flags .flag.neutral,
   .notes .note .note-flags .flag.neutral {
@@ -165,7 +173,7 @@
   #notes-column .note .note-flags .flag.danger,
   .notes .note .note-flags .flag.danger {
     background-color: var(--background-1) !important;
-    color: var(--sn-stylekit-danger-color);
+    color: var(--sn-stylekit-danger-color-1);
   }
 
   #notes-column .note.selected .note-flags .flag.info,
@@ -209,7 +217,7 @@
   /* Workaround for subitems in Markdown lists not colored using StyleKit */
   .cm-s-default .cm-variable-3,
   .cm-s-default .cm-type {
-    color: var(--success-color) !important;
+    color: var(--success-color-1) !important;
   }
 
   /* Progress bars */
@@ -242,7 +250,7 @@
 
   /* Text selection color */
   ::selection {
-    background: var(--success-color) !important;
+    background: var(--success-color-1) !important;
     color: var(--foreground-1) !important;
   }
 
